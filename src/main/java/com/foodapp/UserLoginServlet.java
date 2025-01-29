@@ -54,7 +54,7 @@ public class UserLoginServlet extends HttpServlet {
         } catch (Exception e) {
             e.printStackTrace();
             request.setAttribute("errorMessage", "An error occurred while processing your request.");
-            request.getRequestDispatcher("login.jsp").forward(request, response);
+            request.getRequestDispatcher("index.html").forward(request, response);
         }
 
     }
